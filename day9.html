@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9: CSS Grid Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Day 9: CSS Grid Layout</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="day1.html">Day 1: HTML Basics</a></li>
+                <li><a href="day2.html">Day 2: HTML Lists and Tables</a></li>
+                <li><a href="day3.html">Day 3: HTML Forms and Inputs</a></li>
+                <li><a href="day4.html">Day 4: CSS Basics</a></li>
+                <li><a href="day5.html">Day 5: CSS Layout Techniques</a></li>
+                <li><a href="day6.html">Day 6: Advanced CSS Techniques</a></li>
+                <li><a href="day7.html">Day 7: Responsive Web Design</a></li>
+                <li><a href="day8.html">Day 8: CSS Flexbox</a></li>
+                <li><a href="day9.html">Day 9: CSS Grid Layout</a></li>
+                <li><a href="day10.html">Day 10: CSS Animations and Transitions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>CSS Grid Layout</h2>
+        <p>Today, we'll dive into CSS Grid Layout, a powerful tool for creating two-dimensional layouts. With Grid, you can design complex layouts more easily and intuitively.</p>
+
+        <h3>1. Creating a Grid Container</h3>
+        <p>To start using Grid, you need to define a grid container by setting the <code>display</code> property to <code>grid</code>.</p>
+        <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+</code></pre>
+
+        <h3>2. Defining Rows and Columns</h3>
+        <p>You can define the number of rows and columns in your grid using <code>grid-template-rows</code> and <code>grid-template-columns</code>.</p>
+        <pre><code>.grid-container {
+    grid-template-columns: 200px 1fr 200px; /* fixed and flexible columns */
+    grid-template-rows: auto; /* rows will adjust based on content */
+}
+</code></pre>
+
+        <h3>3. Grid Gap</h3>
+        <p>The <code>grid-gap</code> property allows you to set the spacing between grid items.</p>
+        <pre><code>.grid-container {
+    grid-gap: 20px; /* space between rows and columns */
+}
+</code></pre>
+
+        <h3>4. Placing Grid Items</h3>
+        <p>You can control where items appear in the grid using the <code>grid-column</code> and <code>grid-row</code> properties.</p>
+        <pre><code>.grid-item {
+    grid-column: 1 / 3; /* spans from column 1 to column 3 */
+    grid-row: 1; /* occupies the first row */
+}
+</code></pre>
+
+        <h3>5. Responsive Grids</h3>
+        <p>Make your grid responsive by using media queries to adjust the grid layout based on screen size.</p>
+        <pre><code>@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* single column layout */
+    }
+}
+</code></pre>
+
+        <h3>Creative Activity: Build a Simple Grid Layout</h3>
+        <p>Create a simple grid layout for a photo gallery using Grid.</p>
+        <pre><code>&lt;div class="grid-container"&gt;
+    &lt;div class="grid-item"&gt;Item 1&lt;/div&gt;
+    &lt;div class="grid-item"&gt;Item 2&lt;/div&gt;
+    &lt;div class="grid-item"&gt;Item 3&lt;/div&gt;
+    &lt;div class="grid-item"&gt;Item 4&lt;/div&gt;
+    &lt;div class="grid-item"&gt;Item 5&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 10px;
+}
+
+.grid-item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+&lt;/style&gt;
+</code></pre>
+
+        <h3>Challenge: Create a Responsive Layout with Grid</h3>
+        <p>Create a responsive layout that adapts to different screen sizes using CSS Grid. For example, create a layout with a sidebar and main content area.</p>
+        <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* sidebar and main content */
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* stack sidebar and main content */
+    }
+}
+</code></pre>
+
+        <h3>Conclusion</h3>
+        <p>Great job! Today, you learned about CSS Grid Layout, including how to create grid containers, define rows and columns, and place items in a grid. Grid is a powerful layout system that makes creating responsive designs much easier. Keep practicing to master it!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Surya</p>
+    </footer>
+</body>
+</html>

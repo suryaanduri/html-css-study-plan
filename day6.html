@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6: Advanced CSS Techniques</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Day 6: Advanced CSS Techniques</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="day1.html">Day 1: HTML Basics</a></li>
+                <li><a href="day2.html">Day 2: HTML Lists and Tables</a></li>
+                <li><a href="day3.html">Day 3: HTML Forms and Inputs</a></li>
+                <li><a href="day4.html">Day 4: CSS Basics</a></li>
+                <li><a href="day5.html">Day 5: CSS Layout Techniques</a></li>
+                <li><a href="day6.html">Day 6: Advanced CSS Techniques</a></li>
+                <li><a href="day7.html">Day 7: Responsive Web Design</a></li>
+                <li><a href="day8.html">Day 8: CSS Flexbox</a></li>
+                <li><a href="day9.html">Day 9: CSS Grid Layout</a></li>
+                <li><a href="day10.html">Day 10: CSS Animations and Transitions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Advanced CSS Techniques</h2>
+        <p>Welcome to the advanced CSS techniques section! Today, we will dive into some powerful CSS features that will elevate your web design skills.</p>
+
+        <h3>1. CSS Variables</h3>
+        <p>CSS Variables (also known as Custom Properties) allow you to store values that you can reuse throughout your CSS.</p>
+        <pre><code>:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-size: 16px;
+}
+
+body {
+    color: var(--primary-color);
+    font-size: var(--font-size);
+}
+
+h1 {
+    color: var(--secondary-color);
+}
+</code></pre>
+
+        <h3>2. CSS Transitions</h3>
+        <p>CSS transitions allow you to change property values smoothly (over a given duration).</p>
+        <pre><code>button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+</code></pre>
+
+        <h3>3. CSS Animations</h3>
+        <p>CSS animations allow you to animate changes to CSS properties over time.</p>
+        <pre><code>@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+</code></pre>
+
+        <h3>4. CSS Pseudo-classes and Pseudo-elements</h3>
+        <p>Pseudo-classes and pseudo-elements allow you to style specific parts of elements.</p>
+        <h4>Pseudo-classes</h4>
+        <pre><code>a:hover {
+    color: red;
+}
+
+input:focus {
+    border-color: blue;
+}
+</code></pre>
+        <h4>Pseudo-elements</h4>
+        <pre><code>p::first-line {
+    color: blue;
+    font-weight: bold;
+}
+
+p::before {
+    content: "Note: ";
+    color: red;
+}
+</code></pre>
+
+        <h3>5. Media Queries</h3>
+        <p>Media queries allow you to apply different styles for different devices or screen sizes.</p>
+        <pre><code>@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media (min-width: 601px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+</code></pre>
+
+        <h3>Creative Activity: Build an Animated Button</h3>
+        <p>Create a button with an animation that changes its background color and size when hovered over.</p>
+        <pre><code>button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #2ecc71;
+    transform: scale(1.1);
+}
+</code></pre>
+
+        <h3>Challenge: Create a Responsive Grid Layout</h3>
+        <p>Create a grid layout that adjusts the number of columns based on the screen size using media queries.</p>
+        <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+</code></pre>
+
+        <h3>Conclusion</h3>
+        <p>Great job! Today, you have learned about advanced CSS techniques, including CSS variables, transitions, animations, pseudo-classes, pseudo-elements, and media queries. These tools will help you create more dynamic and responsive web designs. Keep practicing and experimenting with these techniques to solidify your skills.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Surya</p>
+    </footer>
+</body>
+</html>

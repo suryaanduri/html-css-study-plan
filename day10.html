@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10: CSS Animations and Transitions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Day 10: CSS Animations and Transitions</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="day1.html">Day 1: HTML Basics</a></li>
+                <li><a href="day2.html">Day 2: HTML Lists and Tables</a></li>
+                <li><a href="day3.html">Day 3: HTML Forms and Inputs</a></li>
+                <li><a href="day4.html">Day 4: CSS Basics</a></li>
+                <li><a href="day5.html">Day 5: CSS Layout Techniques</a></li>
+                <li><a href="day6.html">Day 6: Advanced CSS Techniques</a></li>
+                <li><a href="day7.html">Day 7: Responsive Web Design</a></li>
+                <li><a href="day8.html">Day 8: CSS Flexbox</a></li>
+                <li><a href="day9.html">Day 9: CSS Grid Layout</a></li>
+                <li><a href="day10.html">Day 10: CSS Animations and Transitions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>CSS Animations and Transitions</h2>
+        <p>Today, we'll explore CSS Animations and Transitions, which allow you to create dynamic and engaging user experiences on your website.</p>
+
+        <h3>1. CSS Transitions</h3>
+        <p>Transitions enable you to change property values smoothly (over a given duration).</p>
+        <pre><code>.box {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    transition: background-color 0.5s ease;
+}
+
+.box:hover {
+    background-color: green;
+}
+</code></pre>
+
+        <h3>2. CSS Keyframe Animations</h3>
+        <p>Keyframe animations allow you to create more complex animations using the <code>@keyframes</code> rule.</p>
+        <pre><code>@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100px); }
+}
+
+.box {
+    animation: slide 1s forwards;
+}
+</code></pre>
+
+        <h3>3. Animation Properties</h3>
+        <p>Animation properties include <code>animation-name</code>, <code>animation-duration</code>, <code>animation-timing-function</code>, and more.</p>
+        <pre><code>.box {
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; /* loop the animation */
+}
+</code></pre>
+
+        <h3>4. Combining Transitions and Animations</h3>
+        <p>You can combine transitions and animations for a more dynamic effect.</p>
+        <pre><code>.box {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    transition: background-color 0.5s ease;
+    animation: slide 1s forwards;
+}
+
+.box:hover {
+    background-color: green;
+}
+</code></pre>
+
+        <h3>Creative Activity: Create a Bounce Animation</h3>
+        <p>Implement a bouncing animation using keyframes.</p>
+        <pre><code>@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+.box {
+    animation: bounce 2s infinite;
+}
+</code></pre>
+
+        <h3>Challenge: Create a Loading Spinner</h3>
+        <p>Create a loading spinner using CSS animations.</p>
+        <pre><code>.spinner {
+    border: 8px solid #f3f3f3; /* Light gray */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+</code></pre>
+
+        <h3>Conclusion</h3>
+        <p>Excellent work! Today, you learned about CSS Animations and Transitions, including how to create smooth transitions, define keyframe animations, and utilize animation properties. These tools will help you create more interactive and engaging web experiences. Keep practicing to master animations!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Surya</p>
+    </footer>
+</body>
+</html>

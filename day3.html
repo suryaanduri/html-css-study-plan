@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3: HTML Forms and Inputs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Day 3: HTML Forms and Inputs</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="day1.html">Day 1: HTML Basics</a></li>
+                <li><a href="day2.html">Day 2: HTML Lists and Tables</a></li>
+                <li><a href="day3.html">Day 3: HTML Forms and Inputs</a></li>
+                <li><a href="day4.html">Day 4: CSS Basics</a></li>
+                <li><a href="day5.html">Day 5: CSS Layout Techniques</a></li>
+                <li><a href="day6.html">Day 6: Advanced CSS Techniques</a></li>
+                <li><a href="day7.html">Day 7: Responsive Web Design</a></li>
+                <li><a href="day8.html">Day 8: CSS Flexbox</a></li>
+                <li><a href="day9.html">Day 9: CSS Grid Layout</a></li>
+                <li><a href="day10.html">Day 10: CSS Animations and Transitions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Interactive Web Pages with HTML Forms</h2>
+        <p>Forms are essential for collecting user input. Whether it's a login form, a sign-up form, or a survey, forms are everywhere on the web. Today, we'll learn how to create and style forms to make our web pages interactive.</p>
+
+        <h3>1. Basic Form Structure</h3>
+        <p>Forms are defined using the <code>&lt;form&gt;</code> element. Inside the form, you use various input elements to collect user data.</p>
+        <pre><code>&lt;form action="submit_form.php" method="post"&gt;
+    &lt;!-- Form elements go here --&gt;
+&lt;/form&gt;
+</code></pre>
+
+        <h3>2. Input Elements</h3>
+        <p>HTML provides a variety of input elements to collect different types of data from users.</p>
+        
+        <h4>Text Input</h4>
+        <pre><code>&lt;label for="name"&gt;Name:&lt;/label&gt;
+&lt;input type="text" id="name" name="name"&gt;
+</code></pre>
+
+        <h4>Password Input</h4>
+        <pre><code>&lt;label for="password"&gt;Password:&lt;/label&gt;
+&lt;input type="password" id="password" name="password"&gt;
+</code></pre>
+
+        <h4>Email Input</h4>
+        <pre><code>&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email"&gt;
+</code></pre>
+
+        <h4>Submit Button</h4>
+        <pre><code>&lt;input type="submit" value="Submit"&gt;
+</code></pre>
+
+        <h4>Radio Buttons</h4>
+        <pre><code>&lt;label&gt;
+    &lt;input type="radio" name="gender" value="male"&gt; Male
+&lt;/label&gt;
+&lt;label&gt;
+    &lt;input type="radio" name="gender" value="female"&gt; Female
+&lt;/label&gt;
+</code></pre>
+
+        <h4>Checkboxes</h4>
+        <pre><code>&lt;label&gt;
+    &lt;input type="checkbox" name="hobby" value="reading"&gt; Reading
+&lt;/label&gt;
+&lt;label&gt;
+    &lt;input type="checkbox" name="hobby" value="traveling"&gt; Traveling
+&lt;/label&gt;
+</code></pre>
+
+        <h4>Select Dropdown</h4>
+        <pre><code>&lt;label for="country"&gt;Country:&lt;/label&gt;
+&lt;select id="country" name="country"&gt;
+    &lt;option value="usa"&gt;USA&lt;/option&gt;
+    &lt;option value="canada"&gt;Canada&lt;/option&gt;
+    &lt;option value="uk"&gt;UK&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+
+        <h3>3. Grouping Elements with Fieldsets</h3>
+        <p>Use the <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> elements to group related elements within a form.</p>
+        <pre><code>&lt;fieldset&gt;
+    &lt;legend&gt;Personal Information&lt;/legend&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+&lt;/fieldset&gt;
+</code></pre>
+
+        <h3>4. Creative Activity: Build a Contact Form</h3>
+        <p>Create a simple contact form that includes the following elements:</p>
+        <ul>
+            <li>Text input for name</li>
+            <li>Email input for email</li>
+            <li>Textarea for message</li>
+            <li>Submit button</li>
+        </ul>
+        <p>Style the form to make it visually appealing.</p>
+
+        <h3>5. Challenge: Create a Survey Form</h3>
+        <p>Create a survey form that collects the following information:</p>
+        <ul>
+            <li>Text input for name</li>
+            <li>Email input for email</li>
+            <li>Radio buttons for gender</li>
+            <li>Checkboxes for hobbies</li>
+            <li>Select dropdown for country</li>
+            <li>Textarea for additional comments</li>
+        </ul>
+        <p>Group related elements using fieldsets and style the form for a clean and professional look.</p>
+
+        <h3>Conclusion</h3>
+        <p>Great job! You’ve learned how to create and style forms in HTML. Forms are a crucial part of web development, and mastering them will enhance your ability to create interactive and user-friendly websites. Tomorrow, we'll dive into CSS basics to bring more style to your web pages!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Surya</p>
+    </footer>
+</body>
+</html>

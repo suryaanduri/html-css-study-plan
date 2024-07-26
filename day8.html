@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8: CSS Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Day 8: CSS Flexbox</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="day1.html">Day 1: HTML Basics</a></li>
+                <li><a href="day2.html">Day 2: HTML Lists and Tables</a></li>
+                <li><a href="day3.html">Day 3: HTML Forms and Inputs</a></li>
+                <li><a href="day4.html">Day 4: CSS Basics</a></li>
+                <li><a href="day5.html">Day 5: CSS Layout Techniques</a></li>
+                <li><a href="day6.html">Day 6: Advanced CSS Techniques</a></li>
+                <li><a href="day7.html">Day 7: Responsive Web Design</a></li>
+                <li><a href="day8.html">Day 8: CSS Flexbox</a></li>
+                <li><a href="day9.html">Day 9: CSS Grid Layout</a></li>
+                <li><a href="day10.html">Day 10: CSS Animations and Transitions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>CSS Flexbox</h2>
+        <p>Today, we'll explore CSS Flexbox, a powerful layout module that allows you to design complex layouts with ease. Flexbox is great for creating responsive layouts.</p>
+
+        <h3>1. Flex Container</h3>
+        <p>The parent element that holds flex items is called the flex container. Use <code>display: flex;</code> to define a flex container.</p>
+        <pre><code>.flex-container {
+    display: flex;
+    background-color: lightgray;
+}
+</code></pre>
+
+        <h3>2. Flex Items</h3>
+        <p>The children of a flex container are called flex items. Flex items can be laid out in any direction and can flex their sizes to fit into the container.</p>
+        <pre><code>.flex-item {
+    background-color: dodgerblue;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
+</code></pre>
+
+        <h3>3. Flex Direction</h3>
+        <p>Use the <code>flex-direction</code> property to define the direction of the flex items.</p>
+        <pre><code>.flex-container {
+    display: flex;
+    flex-direction: row; /* row, row-reverse, column, column-reverse */
+}
+</code></pre>
+
+        <h3>4. Justify Content</h3>
+        <p>Use the <code>justify-content</code> property to align flex items along the main axis.</p>
+        <pre><code>.flex-container {
+    display: flex;
+    justify-content: center; /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+}
+</code></pre>
+
+        <h3>5. Align Items</h3>
+        <p>Use the <code>align-items</code> property to align flex items along the cross axis.</p>
+        <pre><code>.flex-container {
+    display: flex;
+    align-items: center; /* flex-start, flex-end, center, baseline, stretch */
+}
+</code></pre>
+
+        <h3>6. Flex Wrap</h3>
+        <p>Use the <code>flex-wrap</code> property to control whether flex items should wrap or not.</p>
+        <pre><code>.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* nowrap, wrap, wrap-reverse */
+}
+</code></pre>
+
+        <h3>Creative Activity: Build a Simple Flexbox Layout</h3>
+        <p>Create a simple layout with a header, main content, and footer using Flexbox.</p>
+        <pre><code>&lt;div class="flex-container"&gt;
+    &lt;header class="flex-item"&gt;Header&lt;/header&gt;
+    &lt;main class="flex-item"&gt;Main Content&lt;/main&gt;
+    &lt;footer class="flex-item"&gt;Footer&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.flex-item {
+    background-color: dodgerblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+&lt;/style&gt;
+</code></pre>
+
+        <h3>Challenge: Create a Responsive Navbar Using Flexbox</h3>
+        <p>Create a navigation bar that uses Flexbox to align items horizontally and becomes vertical on smaller screens.</p>
+        <pre><code>.navbar {
+    display: flex;
+    background-color: #333;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+</code></pre>
+
+        <h3>Conclusion</h3>
+        <p>Well done! Today, you learned about CSS Flexbox, including flex containers, flex items, and properties like <code>flex-direction</code>, <code>justify-content</code>, <code>align-items</code>, and <code>flex-wrap</code>. Flexbox is a powerful tool for creating responsive layouts. Keep practicing to master it!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Surya</p>
+    </footer>
+</body>
+</html>

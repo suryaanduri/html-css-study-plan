@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5: CSS Layout Techniques</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Day 5: CSS Layout Techniques</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="day1.html">Day 1: HTML Basics</a></li>
+                <li><a href="day2.html">Day 2: HTML Lists and Tables</a></li>
+                <li><a href="day3.html">Day 3: HTML Forms and Inputs</a></li>
+                <li><a href="day4.html">Day 4: CSS Basics</a></li>
+                <li><a href="day5.html">Day 5: CSS Layout Techniques</a></li>
+                <li><a href="day6.html">Day 6: Advanced CSS Techniques</a></li>
+                <li><a href="day7.html">Day 7: Responsive Web Design</a></li>
+                <li><a href="day8.html">Day 8: CSS Flexbox</a></li>
+                <li><a href="day9.html">Day 9: CSS Grid Layout</a></li>
+                <li><a href="day10.html">Day 10: CSS Animations and Transitions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Advanced CSS Layout Techniques</h2>
+        <p>Now that we have a good understanding of basic CSS, it's time to dive into layout techniques. Layout is a crucial aspect of web design that determines how elements are arranged on a page.</p>
+
+        <h3>1. The Box Model</h3>
+        <p>The CSS box model describes the rectangular boxes generated for elements in the document tree and consists of: margins, borders, padding, and the actual content.</p>
+        <pre><code>div {
+    width: 300px;
+    padding: 20px;
+    border: 10px solid black;
+    margin: 15px;
+}
+</code></pre>
+        <p>In the example above, the total width of the <code>&lt;div&gt;</code> would be 300px (content) + 20px (padding) + 10px (border) + 15px (margin).</p>
+
+        <h3>2. Flexbox</h3>
+        <p>Flexbox is a powerful layout tool that allows for the easy alignment and distribution of space among items in a container.</p>
+        <pre><code>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+}
+</code></pre>
+        <p>The example above centers the items both horizontally and vertically within the container, and the items will equally share the available space.</p>
+
+        <h3>3. CSS Grid</h3>
+        <p>CSS Grid Layout is a two-dimensional layout system that allows for the creation of complex grid-based layouts.</p>
+        <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    border: 1px solid black;
+}
+</code></pre>
+        <p>This creates a grid with three columns, and each item within the grid container will be placed into one of these columns.</p>
+
+        <h3>4. Positioning</h3>
+        <p>CSS positioning allows you to specify the position of an element in the document. The main positioning types are static, relative, absolute, fixed, and sticky.</p>
+        <pre><code>.relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.absolute {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+</code></pre>
+
+        <h3>Creative Activity: Create a Responsive Navigation Bar</h3>
+        <p>Create a navigation bar using Flexbox or Grid, ensuring it is responsive and adjusts appropriately on different screen sizes.</p>
+        <pre><code>.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+</code></pre>
+
+        <h3>Challenge: Design a Multi-Column Layout</h3>
+        <p>Create a multi-column layout using CSS Grid, ensuring that the layout adapts to different screen sizes (responsive design).</p>
+        <pre><code>.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+}
+
+.item {
+    padding: 20px;
+    border: 1px solid black;
+}
+</code></pre>
+
+        <h3>Conclusion</h3>
+        <p>Fantastic work! Today, you’ve learned about various CSS layout techniques, including the box model, Flexbox, Grid, and positioning. These are essential tools for creating well-structured, responsive web designs. Tomorrow, we'll explore more advanced CSS topics and techniques!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Surya</p>
+    </footer>
+</body>
+</html>
